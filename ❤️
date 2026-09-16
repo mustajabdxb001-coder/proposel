@@ -1,0 +1,1691 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width,
+               initial-scale=1.0,
+               maximum-scale=1.0,
+               user-scalable=no">
+
+<title>For My Forever ❤️</title>
+
+<style>
+
+/* =====================================================
+   RESET
+===================================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    -webkit-tap-highlight-color:transparent;
+}
+
+html,
+body{
+    width:100%;
+    min-height:100%;
+}
+
+body{
+    min-height:100vh;
+    min-height:100dvh;
+    overflow:hidden;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    padding:18px;
+
+    font-family:
+        "Segoe UI",
+        Arial,
+        sans-serif;
+
+    color:#fff;
+
+    background:
+        radial-gradient(
+            circle at 15% 10%,
+            rgba(150,20,40,.28),
+            transparent 30%
+        ),
+        radial-gradient(
+            circle at 90% 90%,
+            rgba(110,10,30,.28),
+            transparent 35%
+        ),
+        linear-gradient(
+            145deg,
+            #080608,
+            #16090d 50%,
+            #0a0608
+        );
+}
+
+
+/* =====================================================
+   BACKGROUND
+===================================================== */
+
+.background-glow{
+    position:fixed;
+    width:280px;
+    height:280px;
+    border-radius:50%;
+
+    background:rgba(155,25,45,.10);
+
+    filter:blur(70px);
+
+    pointer-events:none;
+}
+
+.glow-one{
+    top:-100px;
+    left:-100px;
+}
+
+.glow-two{
+    right:-120px;
+    bottom:-100px;
+}
+
+
+/* =====================================================
+   FLOATING HEARTS
+===================================================== */
+
+.floating-heart{
+    position:fixed;
+    bottom:-60px;
+
+    z-index:1;
+
+    color:rgba(255,80,105,.20);
+
+    pointer-events:none;
+
+    animation:
+        floatUp linear infinite;
+}
+
+@keyframes floatUp{
+
+    0%{
+        transform:
+            translateY(0)
+            rotate(0deg);
+
+        opacity:0;
+    }
+
+    15%{
+        opacity:1;
+    }
+
+    100%{
+        transform:
+            translateY(-120vh)
+            rotate(360deg);
+
+        opacity:0;
+    }
+}
+
+
+/* =====================================================
+   MAIN CARD
+===================================================== */
+
+.proposal-card{
+
+    position:relative;
+
+    width:100%;
+    max-width:570px;
+
+    max-height:
+        calc(100dvh - 36px);
+
+    overflow-y:auto;
+    overflow-x:hidden;
+
+    padding:
+        35px
+        28px
+        28px;
+
+    text-align:center;
+
+    border-radius:30px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(35,10,15,.96),
+            rgba(17,7,10,.98)
+        );
+
+    border:
+        1px solid
+        rgba(255,90,110,.18);
+
+    box-shadow:
+        0 30px 80px rgba(0,0,0,.65),
+        0 0 50px rgba(150,20,40,.10),
+        inset 0 1px 0
+        rgba(255,255,255,.04);
+
+    z-index:10;
+
+    scrollbar-width:none;
+}
+
+.proposal-card::-webkit-scrollbar{
+    display:none;
+}
+
+
+/* =====================================================
+   TOP DECORATION
+===================================================== */
+
+.top-decoration{
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    gap:10px;
+
+    margin-bottom:16px;
+
+    color:#e87884;
+
+    font-size:13px;
+}
+
+.top-decoration::before,
+.top-decoration::after{
+
+    content:"";
+
+    height:1px;
+
+    width:55px;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            rgba(230,80,100,.55)
+        );
+}
+
+.top-decoration::after{
+    transform:rotate(180deg);
+}
+
+
+/* =====================================================
+   LOVE STICKER
+===================================================== */
+
+.love-sticker{
+
+    width:92px;
+    height:92px;
+
+    margin:
+        0 auto
+        14px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    border-radius:50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(210,45,70,.18),
+            rgba(70,10,20,.25)
+        );
+
+    border:
+        1px solid
+        rgba(255,100,120,.16);
+
+    font-size:54px;
+
+    box-shadow:
+        0 12px 35px
+        rgba(120,10,30,.20);
+
+    animation:
+        stickerBeat 2s ease-in-out infinite;
+}
+
+@keyframes stickerBeat{
+
+    0%,100%{
+        transform:scale(1)
+                   rotate(-2deg);
+    }
+
+    50%{
+        transform:scale(1.06)
+                   rotate(2deg);
+    }
+}
+
+
+/* =====================================================
+   SMALL TEXT
+===================================================== */
+
+.eyebrow{
+
+    color:#d7838d;
+
+    font-size:10px;
+
+    letter-spacing:3px;
+
+    text-transform:uppercase;
+
+    margin-bottom:13px;
+}
+
+
+/* =====================================================
+   HEADING
+===================================================== */
+
+h1{
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-weight:500;
+
+    font-size:
+        clamp(
+            39px,
+            10vw,
+            64px
+        );
+
+    line-height:1.05;
+
+    margin-bottom:18px;
+
+    color:#fff5f6;
+}
+
+h1 span{
+
+    color:#ec586b;
+
+    text-shadow:
+        0 0 30px
+        rgba(235,70,90,.18);
+}
+
+
+/* =====================================================
+   MESSAGE
+===================================================== */
+
+.main-message{
+
+    max-width:470px;
+
+    margin:auto;
+
+    color:#cbb9bd;
+
+    font-size:15px;
+
+    line-height:1.75;
+}
+
+.main-message strong{
+
+    color:#f5d9dd;
+
+    font-weight:500;
+}
+
+
+/* =====================================================
+   CUTE STICKERS
+===================================================== */
+
+.stickers{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:13px;
+
+    margin:
+        20px
+        0
+        16px;
+}
+
+.sticker{
+
+    width:42px;
+    height:42px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    border-radius:13px;
+
+    background:
+        rgba(255,255,255,.035);
+
+    border:
+        1px solid
+        rgba(255,100,120,.10);
+
+    font-size:23px;
+
+    animation:
+        stickerFloat
+        3s
+        ease-in-out
+        infinite;
+}
+
+.sticker:nth-child(2){
+    animation-delay:.3s;
+}
+
+.sticker:nth-child(3){
+    animation-delay:.6s;
+}
+
+.sticker:nth-child(4){
+    animation-delay:.9s;
+}
+
+@keyframes stickerFloat{
+
+    0%,100%{
+        transform:translateY(0);
+    }
+
+    50%{
+        transform:translateY(-5px);
+    }
+}
+
+
+/* =====================================================
+   QUESTION
+===================================================== */
+
+.question{
+
+    margin-top:8px;
+
+    color:#f6dfe2;
+
+    font-family:
+        Georgia,
+        serif;
+
+    font-size:23px;
+}
+
+
+/* =====================================================
+   BUTTON AREA
+===================================================== */
+
+.button-area{
+
+    position:relative;
+
+    width:100%;
+
+    min-height:145px;
+
+    margin-top:18px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:12px;
+}
+
+
+/* =====================================================
+   BUTTONS
+===================================================== */
+
+.action-button{
+
+    min-width:135px;
+
+    min-height:52px;
+
+    padding:
+        14px
+        22px;
+
+    border-radius:50px;
+
+    border:none;
+
+    font-size:15px;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+    font-family:inherit;
+
+    touch-action:manipulation;
+
+    transition:
+        transform .2s ease,
+        box-shadow .2s ease;
+}
+
+
+/* YES */
+
+.yes-button{
+
+    position:relative;
+
+    z-index:5;
+
+    color:white;
+
+    background:
+        linear-gradient(
+            135deg,
+            #dc4055,
+            #a51f36
+        );
+
+    box-shadow:
+        0 12px 28px
+        rgba(190,30,55,.35);
+}
+
+.yes-button:hover{
+
+    transform:
+        translateY(-2px)
+        scale(1.03);
+
+    box-shadow:
+        0 16px 35px
+        rgba(220,40,65,.45);
+}
+
+.yes-button:active{
+
+    transform:scale(.96);
+}
+
+
+/* NO */
+
+.no-button{
+
+    position:relative;
+
+    z-index:4;
+
+    color:#d2bfc2;
+
+    background:#241317;
+
+    border:
+        1px solid
+        #4b2930;
+}
+
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+.footer{
+
+    color:#765e63;
+
+    font-size:11px;
+
+    margin-top:4px;
+
+    line-height:1.5;
+}
+
+
+/* =====================================================
+   SUCCESS SCREEN
+===================================================== */
+
+.success-screen{
+
+    display:none;
+
+    animation:
+        successIn
+        .8s
+        ease forwards;
+}
+
+@keyframes successIn{
+
+    from{
+        opacity:0;
+        transform:translateY(15px)
+                   scale(.97);
+    }
+
+    to{
+        opacity:1;
+        transform:none;
+    }
+}
+
+
+.success-sticker{
+
+    font-size:67px;
+
+    margin-bottom:15px;
+
+    animation:
+        successHeart
+        1.3s
+        ease-in-out
+        infinite;
+}
+
+@keyframes successHeart{
+
+    0%,100%{
+        transform:scale(1);
+    }
+
+    50%{
+        transform:scale(1.1);
+    }
+}
+
+
+.success-title{
+
+    font-family:
+        Georgia,
+        serif;
+
+    font-weight:500;
+
+    font-size:
+        clamp(
+            34px,
+            9vw,
+            55px
+        );
+
+    line-height:1.1;
+
+    color:#fff3f4;
+
+    margin-bottom:20px;
+}
+
+.success-title span{
+    color:#ed586a;
+}
+
+
+.love-letter{
+
+    color:#d2bdc1;
+
+    font-size:15px;
+
+    line-height:1.8;
+
+    max-width:470px;
+
+    margin:auto;
+}
+
+.love-letter strong{
+    color:#ffe0e4;
+    font-weight:500;
+}
+
+
+.signature{
+
+    margin-top:22px;
+
+    color:#ed7581;
+
+    font-family:cursive;
+
+    font-size:24px;
+}
+
+
+/* =====================================================
+   HEART BALLOONS
+===================================================== */
+
+.heart-balloon{
+
+    position:fixed;
+
+    bottom:-100px;
+
+    z-index:50;
+
+    pointer-events:none;
+
+    animation:
+        balloonUp
+        linear
+        forwards;
+
+    filter:
+        drop-shadow(
+            0 5px 10px
+            rgba(180,20,40,.25)
+        );
+}
+
+@keyframes balloonUp{
+
+    0%{
+        transform:
+            translateY(0)
+            rotate(-8deg);
+
+        opacity:1;
+    }
+
+    100%{
+        transform:
+            translateY(-125vh)
+            rotate(12deg);
+
+        opacity:0;
+    }
+}
+
+
+/* =====================================================
+   HEART BURST
+===================================================== */
+
+.burst-heart{
+
+    position:fixed;
+
+    z-index:100;
+
+    pointer-events:none;
+
+    animation:
+        burst
+        2.2s
+        cubic-bezier(.15,.8,.3,1)
+        forwards;
+}
+
+@keyframes burst{
+
+    0%{
+
+        transform:
+            translate(0,0)
+            scale(.2);
+
+        opacity:1;
+    }
+
+    100%{
+
+        transform:
+            translate(
+                var(--x),
+                var(--y)
+            )
+            rotate(360deg)
+            scale(1.2);
+
+        opacity:0;
+    }
+}
+
+
+/* =====================================================
+   SPARKLES
+===================================================== */
+
+.sparkle{
+
+    position:fixed;
+
+    z-index:90;
+
+    pointer-events:none;
+
+    color:#ff8490;
+
+    animation:
+        sparkle
+        1.8s
+        ease-out
+        forwards;
+}
+
+@keyframes sparkle{
+
+    0%{
+        transform:scale(.2);
+        opacity:1;
+    }
+
+    100%{
+        transform:
+            translateY(-50px)
+            scale(1.4);
+
+        opacity:0;
+    }
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media(max-width:600px){
+
+    body{
+
+        padding:12px;
+
+        align-items:center;
+    }
+
+    .proposal-card{
+
+        max-height:
+            calc(100dvh - 24px);
+
+        padding:
+            28px
+            19px
+            22px;
+
+        border-radius:25px;
+    }
+
+    .love-sticker{
+
+        width:76px;
+        height:76px;
+
+        font-size:43px;
+
+        margin-bottom:12px;
+    }
+
+    .eyebrow{
+
+        font-size:9px;
+
+        letter-spacing:2px;
+    }
+
+    h1{
+
+        font-size:
+            clamp(
+                39px,
+                12vw,
+                53px
+            );
+
+        margin-bottom:15px;
+    }
+
+    .main-message{
+
+        font-size:14px;
+
+        line-height:1.7;
+    }
+
+    .stickers{
+
+        margin:
+            16px
+            0
+            13px;
+    }
+
+    .sticker{
+
+        width:38px;
+        height:38px;
+
+        font-size:20px;
+    }
+
+    .question{
+
+        font-size:21px;
+
+        margin-top:5px;
+    }
+
+    .button-area{
+
+        min-height:150px;
+
+        margin-top:12px;
+
+        gap:10px;
+    }
+
+    .action-button{
+
+        min-width:
+            calc(50% - 8px);
+
+        min-height:54px;
+
+        padding:
+            13px
+            10px;
+
+        font-size:14px;
+    }
+
+    .love-letter{
+
+        font-size:14px;
+
+        line-height:1.75;
+    }
+
+    .success-sticker{
+
+        font-size:55px;
+    }
+
+    .signature{
+
+        font-size:21px;
+    }
+}
+
+
+/* VERY SMALL PHONES */
+
+@media(max-width:360px){
+
+    .proposal-card{
+
+        padding:
+            23px
+            15px
+            18px;
+    }
+
+    .love-sticker{
+
+        width:65px;
+        height:65px;
+
+        font-size:36px;
+    }
+
+    h1{
+
+        font-size:38px;
+    }
+
+    .main-message{
+
+        font-size:13px;
+    }
+
+    .question{
+
+        font-size:19px;
+    }
+
+    .button-area{
+
+        min-height:140px;
+    }
+
+    .action-button{
+
+        font-size:13px;
+
+        min-height:50px;
+    }
+}
+
+</style>
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     BACKGROUND GLOW
+===================================================== -->
+
+<div class="background-glow glow-one"></div>
+<div class="background-glow glow-two"></div>
+
+
+<!-- =====================================================
+     FLOATING HEARTS
+===================================================== -->
+
+<div class="floating-heart"
+     style="left:5%;font-size:18px;animation-duration:11s;">
+    ♡
+</div>
+
+<div class="floating-heart"
+     style="left:18%;font-size:24px;animation-duration:14s;animation-delay:2s;">
+    ♥
+</div>
+
+<div class="floating-heart"
+     style="left:34%;font-size:16px;animation-duration:10s;animation-delay:4s;">
+    ♡
+</div>
+
+<div class="floating-heart"
+     style="left:52%;font-size:22px;animation-duration:13s;animation-delay:1s;">
+    ♥
+</div>
+
+<div class="floating-heart"
+     style="left:70%;font-size:18px;animation-duration:12s;animation-delay:3s;">
+    ♡
+</div>
+
+<div class="floating-heart"
+     style="left:88%;font-size:25px;animation-duration:15s;animation-delay:5s;">
+    ♥
+</div>
+
+
+<!-- =====================================================
+     CARD
+===================================================== -->
+
+<main class="proposal-card">
+
+
+<!-- =====================================================
+     QUESTION
+===================================================== -->
+
+<section id="questionScreen">
+
+    <div class="top-decoration">
+        <span>♡</span>
+        <span>for my love</span>
+        <span>♡</span>
+    </div>
+
+
+    <div class="love-sticker">
+        🥰
+    </div>
+
+
+    <div class="eyebrow">
+        A little question from my heart
+    </div>
+
+
+    <h1>
+        Will You<br>
+        <span>Marry Me?</span>
+    </h1>
+
+
+    <p class="main-message">
+
+        Maybe we're not in the same place right now,
+        but you're always in my heart.
+
+        <br><br>
+
+        I don't want our story to end at
+        <strong>"I miss you."</strong>
+
+        I want a lifetime of
+        <strong>"I'm glad I chose you."</strong>
+
+    </p>
+
+
+    <!-- CUTE LOVE STICKERS -->
+
+    <div class="stickers">
+
+        <div class="sticker">💌</div>
+
+        <div class="sticker">🧸</div>
+
+        <div class="sticker">🌹</div>
+
+        <div class="sticker">💍</div>
+
+    </div>
+
+
+    <div class="question">
+        Will you be my forever? ❤️
+    </div>
+
+
+    <!-- BUTTONS -->
+
+    <div
+        class="button-area"
+        id="buttonArea"
+    >
+
+        <button
+            class="action-button yes-button"
+            id="yesButton"
+        >
+            YES, I WILL ❤️
+        </button>
+
+
+        <button
+            class="action-button no-button"
+            id="noButton"
+        >
+            No 🙈
+        </button>
+
+    </div>
+
+
+    <div class="footer">
+
+        Distance may separate us,
+        but my heart already chose you. ❤️
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     SUCCESS
+===================================================== -->
+
+<section
+    id="successScreen"
+    class="success-screen"
+>
+
+    <div class="success-sticker">
+        💖
+    </div>
+
+
+    <h2 class="success-title">
+
+        You said
+        <span>YES! 🥹</span>
+
+    </h2>
+
+
+    <div class="love-letter">
+
+        <p>
+            And just like that...
+            you made my heart the happiest
+            it has ever been. ❤️
+        </p>
+
+
+        <br>
+
+
+        <p>
+            I wish I could be beside you right now,
+            holding your hand and seeing that smile
+            on your face.
+        </p>
+
+
+        <br>
+
+
+        <p>
+            Until the distance disappears,
+            I'll keep choosing you —
+            through every call,
+            every message,
+            every goodnight,
+            and every little moment
+            we share. 🌙
+        </p>
+
+
+        <br>
+
+
+        <p>
+            One day there will be
+            <strong>no screens, no miles,
+            and no goodbyes.</strong>
+
+            Just you and me,
+            building the life we dreamed about. 💍
+        </p>
+
+
+        <div class="signature">
+            Forever yours... ❤️
+        </div>
+
+    </div>
+
+</section>
+
+
+</main>
+
+
+
+<script>
+
+/* =====================================================
+   ELEMENTS
+===================================================== */
+
+const yesButton =
+    document.getElementById("yesButton");
+
+const noButton =
+    document.getElementById("noButton");
+
+const buttonArea =
+    document.getElementById("buttonArea");
+
+const questionScreen =
+    document.getElementById("questionScreen");
+
+const successScreen =
+    document.getElementById("successScreen");
+
+
+/* =====================================================
+   NO BUTTON
+   Keeps moving but YES stays fixed.
+===================================================== */
+
+function moveNoButton(){
+
+    const area =
+        buttonArea.getBoundingClientRect();
+
+    const button =
+        noButton.getBoundingClientRect();
+
+
+    /*
+       Keep the NO button inside
+       the visible button area.
+    */
+
+    const maxX =
+        area.width -
+        button.width;
+
+    const maxY =
+        area.height -
+        button.height;
+
+
+    let x =
+        Math.random() *
+        Math.max(maxX,1);
+
+    let y =
+        Math.random() *
+        Math.max(maxY,1);
+
+
+    /*
+       Prevent it from landing
+       directly over YES.
+    */
+
+    const yes =
+        yesButton.getBoundingClientRect();
+
+
+    for(let i=0;i<10;i++){
+
+        const testLeft =
+            area.left + x;
+
+        const testTop =
+            area.top + y;
+
+        const overlap =
+            testLeft < yes.right &&
+            testLeft + button.width > yes.left &&
+            testTop < yes.bottom &&
+            testTop + button.height > yes.top;
+
+
+        if(!overlap){
+            break;
+        }
+
+
+        x =
+            Math.random() *
+            Math.max(maxX,1);
+
+        y =
+            Math.random() *
+            Math.max(maxY,1);
+    }
+
+
+    /*
+       Use absolute positioning
+       relative to button area.
+    */
+
+    noButton.style.position =
+        "absolute";
+
+    noButton.style.left =
+        x + "px";
+
+    noButton.style.top =
+        y + "px";
+
+    noButton.style.margin = "0";
+}
+
+
+/* Desktop */
+
+noButton.addEventListener(
+    "mouseenter",
+    moveNoButton
+);
+
+
+/* Mobile touch */
+
+noButton.addEventListener(
+    "touchstart",
+    function(event){
+
+        event.preventDefault();
+
+        moveNoButton();
+    },
+    {
+        passive:false
+    }
+);
+
+
+/* If somehow clicked */
+
+noButton.addEventListener(
+    "click",
+    function(event){
+
+        event.preventDefault();
+
+        moveNoButton();
+    }
+);
+
+
+/* =====================================================
+   YES BUTTON
+===================================================== */
+
+yesButton.addEventListener(
+    "click",
+    function(){
+
+        questionScreen.style.display =
+            "none";
+
+        successScreen.style.display =
+            "block";
+
+
+        /* Celebration */
+
+        createHeartExplosion();
+
+        createHeartBalloons();
+
+        createSparkles();
+
+    }
+);
+
+
+/* =====================================================
+   HEART EXPLOSION
+===================================================== */
+
+function createHeartExplosion(){
+
+    const symbols = [
+        "❤️",
+        "💗",
+        "💕",
+        "💖",
+        "💘",
+        "💞",
+        "🌹",
+        "💋"
+    ];
+
+
+    for(
+        let i=0;
+        i<60;
+        i++
+    ){
+
+        const heart =
+            document.createElement("div");
+
+
+        heart.className =
+            "burst-heart";
+
+
+        heart.innerHTML =
+            symbols[
+                Math.floor(
+                    Math.random() *
+                    symbols.length
+                )
+            ];
+
+
+        heart.style.left =
+            "50%";
+
+        heart.style.top =
+            "50%";
+
+
+        const x =
+            (Math.random()-.5) *
+            Math.min(
+                window.innerWidth * 1.5,
+                900
+            );
+
+
+        const y =
+            (Math.random()-.5) *
+            Math.min(
+                window.innerHeight * 1.3,
+                750
+            );
+
+
+        heart.style.setProperty(
+            "--x",
+            x + "px"
+        );
+
+        heart.style.setProperty(
+            "--y",
+            y + "px"
+        );
+
+
+        heart.style.fontSize =
+            (15 +
+            Math.random()*25)
+            + "px";
+
+
+        heart.style.animationDelay =
+            Math.random() *
+            .45
+            + "s";
+
+
+        document.body.appendChild(
+            heart
+        );
+
+
+        setTimeout(
+            function(){
+                heart.remove();
+            },
+            3000
+        );
+    }
+}
+
+
+/* =====================================================
+   HEART BALLOONS
+===================================================== */
+
+function createHeartBalloons(){
+
+    const balloons = [
+        "❤️",
+        "💗",
+        "💕",
+        "💖",
+        "💘",
+        "❤️",
+        "🌹",
+        "💞",
+        "💗",
+        "❤️",
+        "💖",
+        "💕"
+    ];
+
+
+    balloons.forEach(
+        function(item,index){
+
+            setTimeout(
+                function(){
+
+                    const balloon =
+                        document.createElement(
+                            "div"
+                        );
+
+
+                    balloon.className =
+                        "heart-balloon";
+
+
+                    balloon.innerHTML =
+                        item;
+
+
+                    balloon.style.left =
+                        (
+                            Math.random()*94
+                        ) + "vw";
+
+
+                    balloon.style.fontSize =
+                        (
+                            38 +
+                            Math.random()*38
+                        ) + "px";
+
+
+                    balloon.style.animationDuration =
+                        (
+                            5 +
+                            Math.random()*4
+                        ) + "s";
+
+
+                    document.body.appendChild(
+                        balloon
+                    );
+
+
+                    setTimeout(
+                        function(){
+
+                            balloon.remove();
+
+                        },
+                        10000
+                    );
+
+                },
+                index * 220
+            );
+        }
+    );
+}
+
+
+/* =====================================================
+   SPARKLES
+===================================================== */
+
+function createSparkles(){
+
+    const symbols = [
+        "✦",
+        "✧",
+        "♡",
+        "♥",
+        "·"
+    ];
+
+
+    for(
+        let i=0;
+        i<45;
+        i++
+    ){
+
+        setTimeout(
+            function(){
+
+                const sparkle =
+                    document.createElement(
+                        "div"
+                    );
+
+
+                sparkle.className =
+                    "sparkle";
+
+
+                sparkle.innerHTML =
+                    symbols[
+                        Math.floor(
+                            Math.random() *
+                            symbols.length
+                        )
+                    ];
+
+
+                sparkle.style.left =
+                    Math.random()*100
+                    + "vw";
+
+
+                sparkle.style.top =
+                    15 +
+                    Math.random()*70
+                    + "vh";
+
+
+                sparkle.style.fontSize =
+                    (
+                        12 +
+                        Math.random()*18
+                    ) + "px";
+
+
+                document.body.appendChild(
+                    sparkle
+                );
+
+
+                setTimeout(
+                    function(){
+
+                        sparkle.remove();
+
+                    },
+                    2000
+                );
+
+            },
+            i * 80
+        );
+    }
+}
+
+</script>
+
+</body>
+</html>
